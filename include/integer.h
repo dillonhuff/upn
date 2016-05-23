@@ -3,6 +3,9 @@
 namespace upn {
 
   class integer {
+  private:
+    std::string digits;
+
   public:
     integer(const std::string&);
 

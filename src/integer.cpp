@@ -5,10 +5,7 @@
 
 namespace upn {
 
-  integer::integer(const std::string& s) {
-    assert(s.size() > 0);
-    
-  }
+  integer::integer(const std::string& s) : digits(s) {}
 
   integer integer::operator+(const integer& ) const {
     return integer("12392932490483");
@@ -19,7 +16,7 @@ namespace upn {
   }
 
   void integer::print(std::ostream& out) const {
-    out << "1" << std::endl;
+    out << digits;
   }
 
   std::ostream& operator<<(std::ostream& out, const integer& i) {
